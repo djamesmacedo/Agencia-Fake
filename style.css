@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
 * {
     box-sizing: border-box;
 }
@@ -18,9 +19,15 @@ body h5 {
     bottom: 0;
     right: 0;
     padding: 3%;
+    transition-duration: 0.5s;
+
     
 }
-
+.whatsapp-ico:hover {
+    transform: scale(130%);
+    cursor: pointer;
+    
+}
 nav {
     display: flex;
     justify-content: baseline;
@@ -110,9 +117,6 @@ header {
     margin-right: 10%;
     flex: 40%;
 }
-.img-headline {
-    
-}
 .d-a {
     text-decoration: none;
     font-size: 75%;
@@ -136,7 +140,6 @@ main h2 {
     color: #180F4A;
     font-size: 200%;
 }
-
 .card1 {
     text-align: center;
     height: 50%;
@@ -174,8 +177,8 @@ main h2 {
 }
 .card1:hover, .card3:hover {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.116);
+    transition-duration: 1s;
 }
-
 .card-btn {
     display: flex;
     justify-content: center;
@@ -184,29 +187,26 @@ main h2 {
     padding: 0;
     margin: 0;
 }
-
 #cards:hover .card-btn {
     font-size: 120%;
+    transition-duration: 500ms;
 }
-
 #cards:hover .card-btn img {
     width: 12%;
+    
 }
-
 .card-btn > a {
     text-decoration: none;
 }
 #cards p {
     font-size: 120%;
 }
-
 .notebook {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10% 10% 0% 10%;
 }
-
 .img2 {
     flex: 40%;
     text-align: center;
@@ -221,7 +221,6 @@ main h2 {
    
     
 }
-
 .complemento p {
     margin: 0;
     margin-bottom: 10%;
@@ -245,7 +244,6 @@ main h2 {
     border-radius: 10px;
     
 }
-
 .complemento a:hover {
     background-color: #6254AF;
 }
@@ -306,7 +304,6 @@ footer {
     padding: 8%;
    
 }
-
 footer div {
     display: flex;
     flex-direction: column;
@@ -322,6 +319,8 @@ footer a{
     text-decoration: none;
     margin: 1.5%;
     color: gray;
+    
+
    
 }
 .links:hover {
@@ -336,9 +335,11 @@ footer a{
     font-family: 'Lobster', cursive;
     font-size: 150%;
     color: #180F4A;
+    transition-duration: 500ms;
+    
 }
 .logo-footer h3:hover {
-    font-size: 170%;
+    transform: scale(110%);
    
 }
 .ico-container {
@@ -352,13 +353,41 @@ footer a{
 }
 .ico {
     padding: 0% 20%;
+    
+    
+    transition-duration: 0.5s;
 
 }
 .ico:hover {
-   background-color: rgb(104, 104, 104);
-   border-radius: 10px;
+    
+    background-color: rgb(104, 104, 104);
+    border-radius: 10px;
    
    
 }
 
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+
+}
 
