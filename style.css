@@ -326,6 +326,7 @@ footer a{
 .links:hover {
    font-weight: 500;
    margin-left: 5%;
+   transition-duration: 500ms;
    
 }
 .logo-footer h3 {
